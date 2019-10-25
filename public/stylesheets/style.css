@@ -1,0 +1,43 @@
+.quote::after {
+  content: "";
+  background: url('/q/image') center / cover;
+  opacity: 0.8;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 1;   
+
+}
+.quote {
+  padding: 30px 15px;
+  min-height: 400px;
+  background-color: black;
+  position: relative;
+}
+
+.quote > * {
+  position: relative;
+  z-index: 2;   
+}
+
+
+.quote .headline::first-letter {
+  text-transform: uppercase;
+}
+.quote .headline {
+  padding: 15px 45px;
+  margin: auto;
+  display: inline-block;
+}
+
+.quote .author {
+  position: absolute;
+  margin: 0;
+  bottom: 30px;
+  right: 30px;
+}
+.quote .author::after {
+  content: "(c) ";
+}

@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  .mdl-grid
+    .mdl-cell.mdl-cell--12-col.mdl-color-text--grey-50.mdl-shadow--3dp.quote
+      h1.headline= quote.text
+      if quote.nickname || quote.name
+        h2.author= quote.nickname || quote.name
+
+
